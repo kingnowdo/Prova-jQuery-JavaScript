@@ -1,0 +1,39 @@
+body{
+	background-color:#212121;
+}
+
+.title{
+	background-color: #F7A51F;
+	color: white;
+}
+
+.container{
+	background-color: #D0D0D0;
+
+}
+.quadrado{
+	text-align: center;
+	background-color:#24528A;
+	color:white;
+	padding-bottom: 2%;
+	padding-top: 2%;
+    border-style: solid;
+    border-color: #D0D0D0;
+    cursor: pointer;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}
+.forms{
+	text-align: left;
+}
+.form-control{
+	width:30%;
+}
