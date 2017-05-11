@@ -79,8 +79,8 @@ $(document).ready(function(){
             }
             else if(i === 8){
                 alert("Deu velha!");
-                limpa_tabuleiro(j1, j2, points1, points2);
                 i=0;
+                limpa_tabuleiro(j1, j2, points1, points2);
             }
             else i++;
 				//verifica(escolha1, escolha2);
