@@ -109,6 +109,7 @@ function jogada(coordenadas, obj) {
 		}
 		else if(velha()) {
 			$("#status").html("Deu velha!");
+			limpaTabuleiro();
 			return false;
 		}
 		else {
