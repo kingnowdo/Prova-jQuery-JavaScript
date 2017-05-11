@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da Velha</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row-centered">
+        <div class="col jumbotron text-center title">
+          <h1>Jogo da Velha</h1>
+          <p>Divirta-se!</p>
+        </div>
+
+        <div class="placar">
+          <h3 class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id= "nome1">Jogador 1:</h3>
+          <h3 class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id= "nome2">Jogador 2:</h3>
+        </div>
+
+        <h3 id="Vez">É a vez de:</h3>
+
+        </br>
+        </br>
+        </br>
+
+        <div id="tabuleiro">
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p0"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p1"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p2"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p3"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p4"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p5"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p6"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p7"><h5>-</h5></div>
+          <div class="quadrado col-xs-4 col-sm-4 col-md-4 col-lg-4" id="p8"><h5>-</h5></div>
+        </div>
+    </div>
+
+
+        <div class="forms">
+          <label for="usernames">Nome dos jogadores:</label>
+          <input type="text" class="form-control" size="6" id="user1">
+          <input type="text" class="form-control" size="6" id="user2">
+          </br>
+          <button type="button" class="btn btn-success" id="btInicio">Começar</button>
+          <button type="button" class="btn btn-primary" id="btReset" disabled="true">Reset</button>
+        </div>
+    <script src="js/jogoDaVelha.js"></script>
+    <script src="js/main.js"></script>
+
+    </script>
+  </body>
+</html>
