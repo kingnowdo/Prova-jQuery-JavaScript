@@ -70,7 +70,7 @@ $(document).ready(function(){
                     points1++;
                 }
                 else{
-                    if(j2 == undefined) alert("Jogador 1 ganhou!");
+                    if(j2 == undefined) alert("Jogador 2 ganhou!");
                     else alert(j2 + " ganhou!");
                     points2++;
                 }
@@ -80,6 +80,7 @@ $(document).ready(function(){
             else if(i === 8){
                 alert("Deu velha!");
                 limpa_tabuleiro(j1, j2, points1, points2);
+                i=0;
             }
             else i++;
 				//verifica(escolha1, escolha2);
