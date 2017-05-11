@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ 		<title>Jogo da Velha</title>
+ 		<meta charset="utf-8">
+ 		
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script type="text/javascript" src="tictactoe.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+       	<link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Jogo da Velha </h1>
+                <h1><small> muito bom por sinal </small></h1>
+            </div>
+            <div class="col-md-2">
+                <div class="placar" id="p1">
+                    <textarea rows="1" id="TA1"></textarea><div id="ponto1"></div> <div class="indicador" id="ind1"> Sua vez</div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <table>
+
+                    <tr class="row" id="1">
+                        <td class="1 vazio"></td>
+                        <td class="2 vazio"></td>
+                        <td class="3 vazio"></td>
+                    </tr>
+
+                    <tr class="row" id="2">
+                        <td class="1 vazio"></td>
+                        <td class="2 vazio"></td>
+                        <td class="3 vazio"></td>
+                    </tr>
+
+                    <tr class="row" id="3">
+                        <td class="1 vazio"></td>
+                        <td class="2 vazio"></td>
+                        <td class="3 vazio"></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-md-2">
+                <div class="placar" id="p2">
+                    <textarea rows="1" id="TA2"></textarea><div id="ponto2"></div> <div class="indicador" id="ind2"> Sua vez</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
