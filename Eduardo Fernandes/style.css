@@ -1,0 +1,46 @@
+/*Constroi tabuleiro*/
+table {
+	border-collapse: collapse;
+	margin: auto;
+	width: 650px;
+	height: 650px;
+}
+
+td {
+	height: 33%;
+	width: 33%;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+	font-size: 80px;
+}
+
+#linha1>.coluna1, #linha2>.coluna1, #linha1>.coluna2, #linha2>.coluna2 {
+	border-width: 0px 1px 1px 0px;
+}
+
+#linha1>.coluna3, #linha2>.coluna3 {
+	border-width: 0px 0px 1px 1px;
+}
+
+#linha3>.coluna1, #linha3>.coluna2 {
+	border-width: 1px 1px 0px 0px;
+}
+
+#linha3>.coluna3 {
+	border-width: 1px 0px 0px 1px;
+}
+
+/*Forms*/
+.forms {
+	margin-top: 100px;
+}
+
+.icone {
+	top: 0px !important;
+	bottom: 0px;
+}
+
+#status {
+	text-align: center;
+}
