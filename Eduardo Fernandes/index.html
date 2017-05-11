@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo da Velha</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<!--Navbar-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!--Titulo-->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Jogo da Velha</a>					
+				</div>
+
+				<!--Placar-->
+				<p id="placar" class="navbar-text navbar-right">Placar: 0 x 0</p>
+			</div>
+		</nav>
+
+		<!--Tabuleiro-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 col-md-offset-2">
+					<table>
+						<tr id="linha1">
+							<td id="1,1" class="coluna1"></td>
+							<td id="1,2" class="coluna2"></td>
+							<td id="1,3" class="coluna3"></td>
+						</tr>
+
+						<tr id="linha2">
+							<td id="2,1" class="coluna1"></td>
+							<td id="2,2" class="coluna2"></td>
+							<td id="2,3" class="coluna3"></td>
+						</tr>
+
+						<tr id="linha3">
+							<td id="3,1" class="coluna1"></td>
+							<td id="3,2" class="coluna2"></td>
+							<td id="3,3" class="coluna3"></td>
+						</tr>
+					</table>				
+				</div>
+			</div>			
+		</div>
+
+		<!--Forms para os nomes-->
+		<div class="forms">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<!--Input P1-->
+						<div class="col-sm-4">					
+							<div class="input-group">
+				  				<span class="input-group-addon glyphicon glyphicon-user
+				 icone"></span>
+				 				<!--Actual input-->
+				  				<input id="nomeP1" type="text" class="form-control" placeholder="Nome do Player1" aria-describedby="basic-addon1">
+				  				<!--Botao de acao-->
+				  				<span id="botaoP1" class="input-group-btn">
+        							<button class="btn btn-default" type="button">OK</button>
+      							</span>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<p id="status">Insira os nomes dos jogadores</p>
+						</div>
+
+						<!--Input P2-->
+						<div class="col-sm-4">
+							<div class="input-group">
+				  				<span class="input-group-addon glyphicon glyphicon-user
+				 icone"></span>
+				 				<!--Actual input-->
+				  				<input id="nomeP2" type="text" class="form-control" placeholder="Nome do Player2" aria-describedby="basic-addon1">
+				  				<!--Botao de acao-->
+				  				<span id="botaoP2" class="input-group-btn">
+        							<button class="btn btn-default" type="button">OK</button>
+      							</span>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
