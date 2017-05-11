@@ -1,0 +1,28 @@
+.vermelho{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lado{
+    background-color: lightcoral;
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    width: 120px;
+    height: 120px;
+}
+.subcaixa{
+    border-color: black;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .lado{ height: 100%;}
+    .maior{ height: 100%;}
+}
