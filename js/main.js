@@ -101,10 +101,7 @@ jQuery(document).ready(function($) {
 					
 					++rodada
 					$('#painelIndicador').text(qualJogador(rodada))
-					if (rodada > 8 && jogoAcabado == false) {
-						$('#painelIndicador').text("Deu Velha! :(")	
-						jogoAcabado = true
-					} else if (rodada >= 5){
+					if (rodada >= 1){
 						// vamos ver se o jogador da esquerda ganhou
 						if (verificaLinhas('L') || verificaColunas('L') || verificaDiagonais('L')){
 							$('#painelIndicador').text(jogEsq + " ganhou!")
@@ -114,6 +111,9 @@ jQuery(document).ready(function($) {
 							$('#painelIndicador').text(jogDir + " ganhou!")	
 							jogoAcabado = true
 							$('#placarRight').text((parseInt($('#placarRight').text()))+1)
+						} else if (rodada > 8 && jogoAcabado == false) {
+							$('#painelIndicador').text("Deu Velha! :(")	
+							jogoAcabado = true
 						}
 					}
 				}
