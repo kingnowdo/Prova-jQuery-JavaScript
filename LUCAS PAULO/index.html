@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jogo da velha</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    <div class="container">
+        <div id="titulo" class="jumbotron">
+            <h1>Jogo da Velha</h1>
+        </div>
+        <div class="row-centered">
+            <div class="col-sm-12 col-md-12 col-lg-12 principal">
+                <fieldset>
+                    <label for="Jogador 1"> Jogador 1: </label>
+                    <input type="text" id="jogador1"/>
+                    <label for="Jogador 1"> Jogador 2: </label>
+                    <input type="text" id="jogador2"/>
+                    <div id="botao" class="col-sm-12 col-md-12 col-lg-12 principal">
+                        <input  class="form-control" type="button" value="Iniciar" onclick="setnome();"/>
+                    </div>                    
+                </fieldset>
+                <!--PLACAR-->
+                <div class="col-sm-12 col-md-12 col-lg-12 principal">
+                    <h2>Placar</h2>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 placar">
+                    <h2 id="nome_jogador1"></h2>
+                    <p id="placar1">0</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 placar">
+                    <h2></h2>
+                    <p id="x">X</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 placar">
+                    <h2 id="nome_jogador2"></h2>
+                    <p id="placar2">0</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <label id="jogadorAtual"></label>
+                </div>
+                <div id="game" class="col-sm-12 col-md-12 col-lg-12 jogo">
+                    <!-- JOGO DA VELHA -->
+	                <table cellpadding="0" cellspacing="0">
+                        <tr> 
+                            <td onclick="jogada(this,0);"></td>
+                            <td onclick="jogada(this,1);"></td>
+                            <td onclick="jogada(this,2);"></td>
+                        </tr>
+                        <tr> 
+                            <td onclick="jogada(this,3);"></td>
+                            <td onclick="jogada(this,4);"></td>
+                            <td onclick="jogada(this,5);"></td>
+                        </tr>
+                        <tr> 
+                            <td onclick="jogada(this,6);"></td>
+                            <td onclick="jogada(this,7);"></td>
+                            <td onclick="jogada(this,8);"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="final" class="col-sm-12">
+                <footer>
+                    <p>© Copyright 2017 Lucas Paulo</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>                                		
