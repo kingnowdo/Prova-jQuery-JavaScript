@@ -1,0 +1,45 @@
+table {
+  align: center;
+  border-collapse: separate;
+  border-spacing: 10px; }
+
+#title {
+  background-color: #F2EB88;
+  padding: 10px; }
+
+.jogo {
+  margin: auto; }
+
+form {
+  padding: 30px;
+  margin-left: 35%; }
+
+.linha-0 {
+  height: 100px;
+  width: 100px;
+  background-color: gray; }
+
+.linha-1 {
+  height: 100px;
+  width: 100px;
+  background-color: gray; }
+
+.linha-2 {
+  height: 100px;
+  width: 100px;
+  background-color: gray; }
+
+.j1 {
+  height: 100px;
+  width: 100px;
+  background-color: gray; }
+
+.j2 {
+  height: 100px;
+  width: 100px;
+  background-color: gray; }
+
+h2, h3 {
+  text-align: center; }
+
+/*# sourceMappingURL=estilo.css.map */
