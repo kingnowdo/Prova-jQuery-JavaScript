@@ -1,0 +1,54 @@
+/* Centralizar imagens nas colunas */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 8vw;
+}
+
+/* jogo vencedor */
+#e1 {
+    width: 12vw;
+    margin-top: 16vw;
+}
+
+
+/*margin entre as imagens da coluna 1*/
+.col.col-sm-3.coluna1 > img{
+    margin-top: 1.3vw;
+}
+
+
+/* Margin top da coluna 2 */
+.col.col-sm-3.coluna2{
+    margin-top: -3vw;
+}
+
+/* margin top entre as imagens da coluna 2 */
+.col.col-sm-3.coluna2 > img{
+    margin-top: 7.1vw;
+}
+
+/* Margin top da coluna 3 */
+.col.col-sm-3.coluna3{
+    margin-top: -8.7vw;
+}
+
+/* margin top entre as imagens da coluna 3 */
+.col.col-sm-3.coluna3 > img{
+    margin-top: 18.7vw;
+}
+
+/* Margin top da coluna 4 */
+.col.col-sm-3.coluna4{
+    margin-top: 21vw;
+}
+
+
+/* Efeitos de rotacao */
+#e01 {
+    transition: transform 0.3s;
+}
+  
+.rotate {
+    transform: rotate(180deg);
+}
