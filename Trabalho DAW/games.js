@@ -122,3 +122,14 @@ function clique(item){
     
     
 }
+
+
+// Mostrar nome no rodape
+function mostrarNomeRodape(){
+    nomedousuario = document.getElementById("campo").value;
+    document.getElementById("nomeElaboradoPor").innerHTML = "Elaborado pelo chef " + nomedousuario;
+
+    // remover o botao e o formulario
+    document.getElementById("campo").remove();
+    document.getElementById("botaoEnviarNomeUsuario").remove();
+}

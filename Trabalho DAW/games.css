@@ -1,20 +1,38 @@
+body{
+    background-image: url('imagens/background.png');
+    background-repeat: no-repeat;
+    background-size: 105vw;
+}
+
 /* Centralizar imagens nas colunas */
 img {
     display: block;
     margin: 0 auto;
-    width: 8vw;
+    width: 4vw;
+}
+
+/* Ajustar o titulo */
+p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3.5vw;
+    color: FireBrick;
+}
+/* Ajustar o botao Regras */
+.btn.btn-danger {
+    margin-left: 32%;
 }
 
 /* jogo vencedor */
 #e1 {
     width: 12vw;
-    margin-top: 16vw;
+    margin-top: 7vw;
 }
 
 
 /*margin entre as imagens da coluna 1*/
 .col.col-sm-3.coluna1 > img{
-    margin-top: 1.3vw;
+    margin-top: 1.5vw;
 }
 
 
@@ -51,4 +69,36 @@ img {
   
 .rotate {
     transform: rotate(180deg);
+}
+
+/* rodape da pagina */
+.rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: FireBrick;
+}
+
+#campo{
+    margin-top: 7px;
+    margin-left: 37%;
+}
+ /* Ajustar botao enviar nome */
+ .btn.btn-default {
+    margin-left: 2vw;
+    margin-top: -5px;
+ }
+ input[type=text] {
+    padding: 5px 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+h5{
+    text-align: center;
+    margin-top: 12px;
 }

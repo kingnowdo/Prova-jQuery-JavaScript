@@ -13,70 +13,112 @@
   <script src="games.js"></script>
 </head>
     <body>
+
+        
+
+
+
         <div class="container-fluid">
+
+   
             <div class="row">
                 <!-- Esquerda -->
                 <div class="col col-sm-5">
                     <div class="row">
                         <div class="col col-sm-3 coluna1">
-                            <img id="a1" src="um.png" onclick="clique(this);">
-                            <img id="a2" src="um.png" onclick="clique(this);"> 
-                            <img id="a3" src="um.png" onclick="clique(this);"> 
-                            <img id="a4" src="um.png" onclick="clique(this);">
-                            <img id="a5" src="um.png" onclick="clique(this);">
-                            <img id="a6" src="um.png" onclick="clique(this);"> 
-                            <img id="a7" src="um.png" onclick="clique(this);"> 
-                            <img id="a8" src="um.png" onclick="clique(this);">
+                            <img id="a1" src="imagens/batata.png" onclick="clique(this);">
+                            <img id="a2" src="imagens/cachorro.png" onclick="clique(this);"> 
+                            <img id="a3" src="imagens/hamburguer.png" onclick="clique(this);"> 
+                            <img id="a4" src="imagens/sanduiche.png" onclick="clique(this);">
+                            <img id="a5" src="imagens/ovo.png" onclick="clique(this);">
+                            <img id="a6" src="imagens/carne.png" onclick="clique(this);"> 
+                            <img id="a7" src="imagens/pizza.png" onclick="clique(this);"> 
+                            <img id="a8" src="imagens/cerveja.png" onclick="clique(this);">
                         </div>
                         <div class="col col-sm-3 coluna2">
-                            <img id="b1" src="um.png" onclick="clique(this);">
-                            <img id="b2" src="um.png" onclick="clique(this);"> 
-                            <img id="b3" src="um.png" onclick="clique(this);"> 
-                            <img id="b4" src="um.png" onclick="clique(this);">
+                            <img id="b1" src="imagens/interrogacao.png" onclick="clique(this);">
+                            <img id="b2" src="imagens/interrogacao.png" onclick="clique(this);"> 
+                            <img id="b3" src="imagens/interrogacao.png" onclick="clique(this);"> 
+                            <img id="b4" src="imagens/interrogacao.png" onclick="clique(this);">
                         </div>
                         <div class="col col-sm-3 coluna3">
-                            <img id="c1" src="um.png" onclick="clique(this);">
-                            <img id="c2" src="um.png" onclick="clique(this);"> 
+                            <img id="c1" src="imagens/interrogacao.png" onclick="clique(this);">
+                            <img id="c2" src="imagens/interrogacao.png" onclick="clique(this);"> 
                         </div>
                         <div class="col col-sm-3 coluna4">
-                            <img id="d1" src="um.png" onclick="clique(this);">
+                            <img id="d1" src="imagens/interrogacao.png" onclick="clique(this);">
                         </div>
                     </div>
                 </div>
 
-                <!-- Vencedor -->
+                <!-- Titulo, botao regras e comida vencedora -->
                 <div class="col col-sm-2">
-                    <img id="e1" src="um.png">
+
+                    <!-- Titulo -->
+                    <p>Food</p>
+
+                    <!-- Botao Modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Regras</button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Regras do jogo</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            bla bla bla bla bla bla bla
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Comida vencedora -->
+                    <img id="e1" src="imagens/win.png">
                 </div>
 
                 <!-- Direita -->
                 <div class="col col-sm-5">
                     <div class="row">
                         <div class="col col-sm-3 coluna4">
-                            <img id="f1" src="um.png" onclick="clique(this);">
+                            <img id="f1" src="imagens/interrogacao.png" onclick="clique(this);">
                         </div>
                         <div class="col col-sm-3 coluna3">
-                            <img id="g1" src="um.png" onclick="clique(this);">
-                            <img id="g2" src="um.png" onclick="clique(this);"> 
+                            <img id="g1" src="imagens/interrogacao.png" onclick="clique(this);">
+                            <img id="g2" src="imagens/interrogacao.png" onclick="clique(this);"> 
                         </div>
                         <div class="col col-sm-3 coluna2">
-                            <img id="h1" src="um.png" onclick="clique(this);">
-                            <img id="h2" src="um.png" onclick="clique(this);"> 
-                            <img id="h3" src="um.png" onclick="clique(this);"> 
-                            <img id="h4" src="um.png" onclick="clique(this);">
+                            <img id="h1" src="imagens/interrogacao.png" onclick="clique(this);">
+                            <img id="h2" src="imagens/interrogacao.png" onclick="clique(this);"> 
+                            <img id="h3" src="imagens/interrogacao.png" onclick="clique(this);"> 
+                            <img id="h4" src="imagens/interrogacao.png" onclick="clique(this);">
                         </div>
                         <div class="col col-sm-3 coluna1">
-                            <img id="i1" src="um.png" onclick="clique(this);">
-                            <img id="i2" src="um.png" onclick="clique(this);"> 
-                            <img id="i3" src="um.png" onclick="clique(this);"> 
-                            <img id="i4" src="um.png" onclick="clique(this);">
-                            <img id="i5" src="um.png" onclick="clique(this);">
-                            <img id="i6" src="um.png" onclick="clique(this);"> 
-                            <img id="i7" src="um.png" onclick="clique(this);"> 
-                            <img id="i8" src="um.png" onclick="clique(this);">
+                            <img id="i1" src="imagens/queijo.png" onclick="clique(this);">
+                            <img id="i2" src="imagens/chocolate.png" onclick="clique(this);"> 
+                            <img id="i3" src="imagens/banana.png" onclick="clique(this);"> 
+                            <img id="i4" src="imagens/maca.png" onclick="clique(this);">
+                            <img id="i5" src="imagens/uva.png" onclick="clique(this);">
+                            <img id="i6" src="imagens/melancia.png" onclick="clique(this);"> 
+                            <img id="i7" src="imagens/picole.png" onclick="clique(this);"> 
+                            <img id="i8" src="imagens/sorvete.png" onclick="clique(this);">
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="rodape">
+            <input type="text" id="campo" placeholder="Digite seu nome">
+            <button type="submit" id="botaoEnviarNomeUsuario" onclick="mostrarNomeRodape();" class="btn btn-default">Enviar</button>
+            <div id="elaboradoPor">
+                <h5 id="nomeElaboradoPor"></h5>
             </div>
         </div>
     </body>
