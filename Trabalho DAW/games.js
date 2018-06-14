@@ -1,40 +1,3 @@
-//constantes para usar na dinamica e no compartilhamento //##### poderia virar um dicionário
-const itens = ['0','1','2']
-const item01 = '0'
-const item02 = '1'
-const item03 = '2'
-const item04 = '3'
-const item05 = '4'
-const item06 = '5'
-const item07 = '6'
-const item08 = '7'
-const item09 = '8'
-const item10 = '9'
-const item11 = 'a'
-const item12 = 'b'
-const item13 = 'c'
-const item14 = 'd'
-const item15 = 'e'
-const item16 = 'f'
-
-//variaveis que guardam o estado dos vecedores de cada fase
-var oitavas = "????????"
-var quartas = "????"
-var semi = "??"
-var final = "?"
-
-function regras(){ //Exibir as regras
-
-}
-
-function compartilhar(){
-
-}
-
-function inserir_nome(){ //Função que pega o nome do campo de texto e coloca no rodapé
-
-}
-
 /* colunas:  (definidas pelos ids)
 a oitavas
 b quartas
@@ -85,42 +48,51 @@ function proxColuna(coluna){
             break;
     
         default:
+            return coluna;
             break;
     }
 }
 
 function proxLinha(linha){
-    return parseInt( ( parseFloat(item.id[1]) + 1.0 ) /2 );
+    return parseInt( ( parseFloat(linha) + 1.0 ) /2 );
 }
 
-function qualItem(id){
-
-}
-
+const indefinido = "imagens/interrogacao.png";
+const win = "imagens/win.png";
 function clique(item){
-    if(item.src=="desconhecido.png"){ //impedir continuar se foi clicado em algum não definido
+    if(item.src==indefinido){ //impedir continuar se foi clicado em algum não definido
         return 0;
     }
 
     animação(item); //Uma animação para ser executada quando for dado um clique
     
-    console.log(item.id); ///////////////
-    console.log(parseInt( ( item.id[1])  ));
-    console.log(parseInt( ( parseFloat(item.id[1]) + 1.0 ) /2 ));
-    
     var coluna = item.id[0];
     var linha = item.id[1];
-    if(coluna != 'e'){ //não for o vencedor
-        var idVencedor = "#??" //armazenar o id que sera alterado apos esse clique
-        idVencedor[1]= proxColuna(item.id[0]);
-        idVencedor[2]= proxLinha(item.id[1]);
+    if(item.src != $('#'+proxColuna(coluna)+proxLinha(linha)).attr('src')){ //se nao for repitindo
+        if( $('#'+proxColuna(coluna)+proxLinha(linha)).attr('src')== indefinido || $('#'+proxColuna(coluna)+proxLinha(linha)).attr('src')== win ) $('#'+proxColuna(coluna)+proxLinha(linha)).attr({'src':item.src});
+        else if( $('#'+proxColuna(proxColuna(coluna))+proxLinha(proxLinha(linha))).attr('src')== indefinido || $('#'+proxColuna(proxColuna(coluna))+proxLinha(proxLinha(linha))).attr('src')== win) $('#'+proxColuna(coluna)+proxLinha(linha)).attr({'src':item.src});
+        else {
+            var pColuna = proxColuna(coluna);
+            var pLinha = proxLinha(linha);
+            $('#'+pColuna+pLinha).attr({'src':item.src});
+            pColuna = proxColuna(pColuna);
+            pLinha = proxLinha(pLinha);
+            if($('#'+pColuna+pLinha).attr('src')!= indefinido && $('#'+pColuna+pLinha).attr('src')!= win){
+                $('#'+pColuna+pLinha).attr({'src':item.src});
+                pColuna = proxColuna(pColuna);
+                pLinha = proxLinha(pLinha);
+                if($('#'+pColuna+pLinha).attr('src')!= indefinido && $('#'+pColuna+pLinha).attr('src')!= win){
+                    $('#'+pColuna+pLinha).attr({'src':item.src});
+                    pColuna = proxColuna(pColuna);
+                    pLinha = proxLinha(pLinha);
+                    if($('#'+pColuna+pLinha).attr('src')!= indefinido && $('#'+pColuna+pLinha).attr('src')!= win){
+                        $('#'+pColuna+pLinha).attr({'src':item.src});
+                    }
+                }
+            }
 
-        var linha = proxLinha();
-        if(coluna=='a'||coluna=='i') oitavas[linha]=qualItem(coluna+linha);
-
+        }
     }
-    
-    
 }
 
 
